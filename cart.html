@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="styles/checkout-header.css">
+  <link rel="stylesheet" href="styles/checkout-page.css">
+
+  <title>Checkout</title>
+</head>
+<body>
+  <!-- Header-->
+  <div class="header">
+    <div class="header-content">
+        <div class="left-section">
+          <a href="home.html"><img src="images/amazon-logo.png" alt="amazon-logo" class="amazon-logo"></a>
+        </div>
+        <div class="middle-section">
+          <div class="checkout-text">Checkout (<span class="item-count"><span class="total-item-in-cart"></span> items</span>)</div>
+        </div>
+        <div class="right-section">
+          <img src="images/icons/checkout-lock-icon.png" alt="lock-icon" class="lock-icon">
+        </div>
+    </div>  
+  </div>
+
+  <!--Body Content-->
+  <div class="main-container">
+    <div class="title-text">Review your order</div>
+
+    <div class="item-container">
+      <div class="delivery-container">
+        
+      </div>
+      
+      
+      <div class="order-summary">
+        <div class="order-summary-text">Order Summary</div>
+
+        <div class="payment-info">
+          <div class="order-items">
+            <div class="order-count">Items (<span class="js-order-count">0.00<!--seen in js--></span>):</div>
+            <div class="total-item-price">$<span class="js-item-price">0.00<!--seen in js--></span></div>
+          </div>
+          <div class="shipping-info">
+            <div class="shipping-text">Shipping & handling:</div>
+            <div class="shipping-price">$<span class="total-shipping-price">0.00</span></div>
+            <div class="first-line">_______</div>
+          </div>
+          <br>
+          <div class="before-tax">
+            <div class="tax-text">Total before tax:</div>
+            <div class="total-before-tax">$<span class="js-total-before-tax">0.00</span></div>
+          </div>
+          <div class="tax-section">
+            <div class="estimated-tax">Estimated tax (10%):</div>
+            <div class="tax-price">$<span class="js-tax-price">0.00</span></div>
+          </div>
+          <div class="second-line"><hr></div>
+          <div class="order-total">
+            <div class="total-text">Order total:</div>
+            <div class="order-total-price">$<span class="js-total-order-price">0.00</span></div>
+          </div>
+          <div class="button-container">
+            <button class="js-button-purchase-order">Purchase Order</button>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="data/cart.js"></script>
+  <script src="data/purchase.js"></script>
+  <script src="data/shipping.js"></script>
+  <script src="script/checkout.js"></script>
+
+</body>
+</html>

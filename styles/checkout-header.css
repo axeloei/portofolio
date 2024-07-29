@@ -1,0 +1,61 @@
+.header {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-family: Roboto, Arial;
+  z-index: 100;
+  background-color: white;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  column-gap: 20px;
+  justify-content: space-between;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+}
+
+.amazon-logo {
+  max-width: 100%;
+}
+
+.middle-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.checkout-text {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.item-count {
+  color: rgb(0, 113, 133);
+  font-size: 23px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lock-icon {
+  width: 17px;
+}
+

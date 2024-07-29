@@ -1,0 +1,186 @@
+.main-container {
+  height: 300px;
+  max-width: 1100px;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Roboto, Arial;
+}
+
+.title-text {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.item-container {
+  max-width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  align-items: start;
+}
+
+.delivery-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  row-gap: 15px;
+}
+
+.delivery-items {
+  display: flex;
+  padding: 14px;
+  flex-direction: column;
+  border: 1px solid rgb(222, 222, 222);
+}
+
+.delivery-date {
+  font-weight: bold;
+  color: rgb(0, 118, 0);
+  font-size: 20px;
+}
+
+.item-information {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr;
+  column-gap: 15px;
+}
+
+.image-container {
+  max-width: 100%;
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 120px;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.item-name, .delivery-option-text {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.item-price {
+  color: rgb(177, 39, 4);
+  font-weight: 500;
+}
+
+.js-update-button, .js-delete-button, .js-show-save-button {
+  color: #017cb6;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.delivery-details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+
+.options {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.date-input {
+  width: 20px;
+}
+
+.option-date {
+  color: rgb(0, 118, 0);
+  font-weight: 500;
+  margin-bottom: 3px
+}
+
+.option-price {
+  color: rgb(120, 120, 120);
+  font-size: 15px;
+}
+
+.order-summary {
+  padding: 14px;
+  border: 1px solid rgb(222, 222, 222);
+}
+
+.order-summary-text {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 13px;
+}
+
+.order-items, .shipping-info, .before-tax, .tax-section, .order-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.shipping-info {
+  position: relative;
+}
+
+.first-line {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  color: rgb(222, 222, 222);
+}
+
+.second-line hr {
+  border: 1px solid rgb(222, 222, 222);
+}
+
+.order-count, .shipping-text, .tax-text, .estimated-text, .total-text {
+  flex: 1;
+}
+
+.total-item-price, .shipping-price, .total-before-tax, .tax-price, .order-total-price {
+  width: 100px;
+  text-align: right;
+}
+
+.order-total {
+  margin-top: 10px;
+}
+
+.total-text, .order-total-price {
+  color: rgb(177, 39, 4);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.js-save-button, .js-new-input {
+  display: none;
+}
+
+.js-is-inputing {
+  width: 50px;
+  font-size: 16px;
+}
+
+.js-display-toggle {
+  display: none;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: Robot, Arial;
+}
+
+.js-button-purchase-order {
+  padding: 7px 50px;
+  background-color: orange;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}

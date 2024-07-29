@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Return and Orders</title>
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="styles/general-header.css">
+  <link rel="stylesheet" href="styles/return-order-page.css">
+
+</head>
+<body>
+  
+   <!--Header-->
+   <div class="header">
+    <div class="left-section">
+      <a href="home.html">
+        <img src="images/amazon-logo-white.png" alt="" class="amazon-logo">
+      </a>
+    </div>
+    <div class="middle-section">
+      <input type="text" placeholder="Search" class="search-bar">
+      <button class="search-button"><img src="images/icons/search-icon.png" alt="" class="search-icon"></button>
+    </div>
+    <div class="right-section">
+      <a href="return-order-page.html">
+        <div class="return-order-text">Returns<br><span class="order-text">& Orders</span></div>
+      </a>
+      <a href="cart.html">
+        <div class="cart-section">
+          <img src="images/icons/cart-icon.png" alt="" class="cart-icon">
+          <div class="cart-quantity js-cart-quantity"></div>
+          <div class="cart-text"><br>Cart</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!--Body Content-->
+  <div class="product-container">
+    <div class="subtitle">
+      Your Orders
+    </div>
+
+    <div class="main-container">
+      <div class="title-grid">
+        <div class="order-placed">
+          Order Placed: <br><span class="order-date">July 21</span>
+        </div>
+        <div class="total-text">
+          Total: <br>$<span class="total-price">0.00</span>
+        </div>
+        <div class="order-id-text">
+          Order ID: <br><span class="order-id">27cba69d-4c3d-4098-b42d-ac7fa62b7664</span>
+        </div>
+      </div>
+
+      <div class="product-grid">
+        <div class="image-container">
+          <img src="images/products/6-piece-non-stick-baking-set.webp" alt="" class="product-image">
+        </div>
+        <div class="product-details">
+          <div class="product-name">ISI APAPUN NANTI DIGANTI</div>
+          <div class="arrival-date">Arriving on: NANTI DIGANTI</div>
+          <div class="order-quantity">Quantity: NANTI DIGANTI</div>
+          <div><button class="buy-again">Buy it again</button></div>
+        </div>
+        <div class="right-container">
+          <button class="track-button">Track package</button>
+        </div>
+
+    </div>
+    
+  </div>
+
+  <script src="data/cart.js"></script>
+  <script src="data/purchase.js"></script>
+  <script src="script/return-order.js"></script>
+
+</body>
+</html>

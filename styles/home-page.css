@@ -1,0 +1,119 @@
+.body {
+  padding-top: 60px;
+  margin: 0;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+@media (min-width: 500px) and (max-width: 650px){
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 651px) and (max-width: 900px){
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1200px){
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px){
+  .product-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 1501px) and (max-width: 1800px){
+  .product-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (min-width: 1801px) and (max-width: 2200px){
+  .product-grid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media (min-width: 2201px) and (max-width: 2500px){
+  .product-grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+.product-container {
+  padding: 40px 25px 25px 25px;
+  border-right: 1px solid rgb(231, 231, 231);
+  border-bottom: 1px solid rgb(231, 231, 231); 
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto, Arial;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-name {
+  height: 40px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.rating-section {
+  display: flex;
+  align-items: center;
+}
+
+.stars-image {  
+  width: 100px;
+  margin-right: 6px;
+}
+
+.rating-count {
+  color: rgb(1, 124, 182);
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+.product-price {
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.quantity-selector {
+  padding: 3px 5px;
+  font-size: 15px;
+  border-radius: 8px;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(213, 217, 217);
+  margin-bottom: 50px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+}
+
+.add-button {
+  padding: 7px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(255, 216, 20);
+}
